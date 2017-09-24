@@ -1,0 +1,291 @@
+/*-----------------------------------------------------------
+#Navigation
+------------------------------------------------------------*/
+.navbar {
+  background-color: rgba(0.0,0.0,0.0,0.8); opacity: 0.8; filter: alpha(opacity=50);
+}
+
+.topnav {
+  font-size: 16px;
+  border-bottom: 1px outset rgba(192, 192, 192, 0.5);
+  box-shadow: 0px 1px rgba(0, 0, 0, 0.3);
+}
+
+.topnav ul.navbar-nav li a:hover
+ {
+background-color: white;
+color: #000;
+}
+
+
+/*----------------------------------------------------------
+#Home
+-----------------------------------------------------------*/
+.intro-header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background: url('../img/urban.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 855px;
+}
+h2,
+img {
+  padding-top: 50px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+}
+
+.bg-overlay {
+  background:rgba(0,0,0, 0.3);
+  height: 855px;
+}
+
+.intro-message {
+  padding-top: 18%;
+  padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+  margin-top: -50px;
+  text-shadow: 2px 1px 2px #000;
+  font-size: 5em;
+  color: #f2f2f2;
+}
+
+.intro-message > h3 {
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+  color: #f2f2f2;
+}
+
+.intro-divider {
+  width: 100%;
+  border-top: 2px solid #f8f8f8;
+  border-bottom: 2px solid rgba(0,0,0,0.3);
+}
+
+@media(max-width:767px) {
+  .intro-message {
+    padding-top: 40%;
+    padding-bottom: 15%;
+  }
+
+  .intro-message > h1 {
+    font-size: 3em;
+  }
+
+  ul.intro-social-buttons > li {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  ul.intro-social-buttons > li:last-child {
+     margin-bottom: 0;
+  }
+}
+
+.btn-default {
+  display: inline-block;
+  color: #000;
+  border: 2px outset rgba(0, 0, 0, 0.9);
+  background: #f2f2f2;
+  text-shadow: 0.25px 0.25px 0.25px rgba(0,0,0, 20);
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  color: #fff;
+  border: 2px outset rgba(0, 0, 0, 0.9);
+  background: rgba(0,0,0, 0.9);
+  transform:scale(1.1);
+  transition: 0.2s;
+  text-shadow: 1px 1px 1px rgba(0,0,0, 20);
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+  letter-spacing: 2px;
+}
+
+/*----------------------------------------------------------
+#About
+-----------------------------------------------------------*/
+.content {
+  padding-top: 50px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-size: cover;
+  background-image: url(../img/image.jpg);
+  height:85%;
+  color: white;
+  background: background:rgba(0,0,0, 0.9);;
+}
+
+.lead {
+  font-size: 18px;
+  text-align: left;
+}
+
+.img-circle {
+  position: relative;
+  top: -75px;
+}
+
+h2.section-heading {
+  font-size: 3em;
+  color: white;
+  text-align: left;
+}
+
+.content p {
+  font-weight: normal;
+  color: white;
+  }
+
+.content-divider {
+  width: 100px;
+   border-top: 2px solid #00A3FF;
+   border-bottom: 2px solid rgba(0,0,0,0.3);
+}
+
+/*------------------------------------------------------------------
+--Portfolio
+-------------------------------------------------------------------*/
+h2.portfolio-heading {
+  margin-top: 30px;
+  font-size: 3em;
+  text-align: left;
+  color: white;
+}
+
+.content-divider2 {
+   width: 100px;
+   border-top: 2px solid #00A3FF;
+   border-bottom: 2px solid rgba(0,0,0,0.3);
+   margin-bottom: 30px;
+}
+
+#portfolio {
+  background: url('../img/phone.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding-bottom: 60px;
+}
+
+#portfolio .portfolio-item {
+  margin: 0 0 30px;
+  border: 1px outset rgba(255, 255, 255, 0.6);
+}
+
+#portfolio .portfolio-item:hover {
+  transition: 0.5s;
+  box-shadow: 5px 10px 5px rgba(0,0,0,0.9);
+}
+
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  background: rgba(0, 0, 0, .7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s,
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: rgba(0,0,0, 0.8);
+  text-align: center;
+  padding: 25px;
+}
+
+#portfolio .portfolio-item .portfolio-caption h4 {
+  color: #fff;
+  margin: 0;
+}
+
+#portfolio .portfolio-item .portfolio-caption p {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  padding-top: 5px;
+  font-size: 13px;
+  margin: 0;
+}
+
+
+/*-------------------------------------------------
+#Contact
+--------------------------------------------------*/
+.contact {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  text-align: center;
+  background: url('../img/note.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 855px;
+}
+
+.contact-heading {
+  color: #f2f2f2;
+}
+
+.contact-description {
+  color: #f2f2f2;
+  font-size: 16px;
+}
+
+.form-group {
+  margin-bottom: 20px
+}
+
+.btn-primary {
+  color: #000;
+  border: 2px outset rgba(0, 0, 0, 0.9);
+  background: #f2f2f2;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+  letter-spacing: 2px;
+  transition: 0.2s;
+  font-weight: 700;
+}
+
+/*--------------------------------------------------------
+#Footer
+--------------------------------------------------------*/
+footer {
+  padding-top: 10px;
+  background-color: #f2f2f2;
+}
