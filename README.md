@@ -1,5 +1,4 @@
 # vzhan100.github.io
-# vincentzhang.me
 
 My personal portfolio website created HTML,CSS, and Bootstrap.
 The design is a responsive single page theme.
